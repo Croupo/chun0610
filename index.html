@@ -45,7 +45,8 @@
      width="400"
      height="341"
      title="A T-Rex on display in the Manchester University Museum">
-      <iframe src="//player.bilibili.com/player.html?aid=690033987&bvid=BV1n24y127mq&cid=890018644&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+      <iframe src="//player.bilibili.com/player.html?aid=690033987&bvid=BV1n24y127mq&cid=890018644&page=1" 
+              scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
       
       
       <!-- 包含一个 article（一篇文章） -->
@@ -59,22 +60,33 @@
 
         <p>我们不知道，要试试才可以</p>
 
-        <h3>九九八十一</h3>
+        <h3>猜对可以吃番茄</h3>
+        <p>选择1到100的随机数，看看对不对</p>
+        <div class="form">
+          <label for="guessField">Enter a guess: </label>
+          <input type="number" min="1" max="100" required id="guessField" class="guessField">
+          <input type="submit" value="Submit guess" class="guessSubmit">
+        </div>
 
-        <h3>达拉崩吧</h3>
+        <div class="resultParas">
+          <p class="guesses"></p>
+          <p class="lastResult"></p>
+          <p class="lowOrHi"></p>
+        </div>
+        <script src="script/numgame.js" async></script>
 
       </article>
+      
+      
 
       <!-- 侧边栏在主内容右侧 -->
       <aside>
         <h2>相关链接</h2>
 
         <ul>
-          <li><a href="#">言和</a></li>
-          <li><a href="#">乐正绫</a></li>
-          <li><a href="#">初音未来</a></li>
-          <li><a href="#">三无 Marblue</a></li>
-          <li><a href="#">二次元欢迎你</a></li>
+          <li><a href="#">我的主页</a></li>
+          <li><a href="#">他的主页</a></li>
+          <li><a href="#">去新世界</a></li>
         </ul>
       </aside>
 
