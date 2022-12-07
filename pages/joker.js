@@ -18,10 +18,10 @@ function result() {
   let xItem = randomValueFromArray(insertX);
   let yItem = randomValueFromArray(insertY);
   let zItem = randomValueFromArray(insertZ);
-  newStory = newStory.replace(':insertx:', xItem);
-  newStory = newStory.replace(':insertx:', xItem);
-  newStory = newStory.replace(':inserty:', yItem);
-  newStory = newStory.replace(':insertz:', zItem);
+  newStory = newStory.replace(':inserta:', xItem);
+  newStory = newStory.replace(':inserta:', xItem);
+  newStory = newStory.replace(':insertb:', yItem);
+  newStory = newStory.replace(':insertc:', zItem);
   
   if(customName.value !== '') {
     let name = customName.value;
@@ -31,8 +31,8 @@ function result() {
   if(document.getElementById("american").checked) {
     let weight = Math.round(140 * 2.20462) + '磅';
     let temperature = Math.round(35 * 9 / 5 + 32) + '华氏度';
-    newStory = newStory.replace('35 摄氏度', temperature);
-    newStory = newStory.replace('140 公斤', weight);
+    newStory = newStory.replace('34 摄氏度', temperature);
+    newStory = newStory.replace('130 公斤', weight);
   }
 
   story.textContent = newStory ;
